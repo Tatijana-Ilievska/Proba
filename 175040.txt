@@ -1,0 +1,192 @@
+4. Барање
+$ git clone https://github.com/Tatijana-Ilievska/SI_2022_lab1_175040.git
+-Клонирање на remote репозиториумот на нашиот компјутер
+
+5. Барање 
+$ notepad shopping_list.txt
+-Создавање текстуална датотека со бараната содржина (5 производи) 
+$ git add .
+-Поставување на текстуалната датотека на stage
+$ git commit -m "Add 5 items to the shopping list"
+-Направен commit со порака Add 5 items to the shopping list
+
+6. Барање
+$ nano shopping_list.txt
+-Промена на текстуалната датотека, додадена количина на производите
+$ git commit -a -m "Add quantities to the items"
+-Истовремен add (додавање на сцена) и commit на текстуалната датотека со нова порака "Add quantities to the items"
+
+7. Барање
+$ git branch branch1
+$ git branch branch2
+-Креирање на нови гранки со соодветни имиња
+
+8. Барање
+$ git log
+commit 118f4b1e7ec2870605002d45e3f59b448c97ce13 (HEAD -> master, branch2, branch1)
+Author: Tatijana Ilievska <tatijana.ilievska@students.finki.ukim.mk>
+Date:   Sun Apr 10 19:47:25 2022 +0200
+
+    Add quantites to the items
+
+commit bc74e0e22938aa7f47f01b38b96f6e8659e07634
+Author: Tatijana Ilievska <tatijana.ilievska@students.finki.ukim.mk>
+Date:   Sun Apr 10 19:46:31 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 4f02491636b927dd3997cc8b6790f24e36a76e93 (origin/master, origin/HEAD)
+Author: Tatijana-Ilievska <102691140+Tatijana-Ilievska@users.noreply.github.com>
+Date:   Sun Apr 10 19:43:24 2022 +0200
+
+    Initial commit
+
+9. Барање
+$ git push --all origin
+-Прави push кон поврзаниот remote репозиториум - ги поставува таму сите локални датотеки кои досега се направени
+
+10. Барање
+$ git checkout branch1
+-Преместување на гранката branch1
+
+11. Барање
+$ nano shopping_list.txt
+-Промена на содржината на текстуалната датотека
+$ git commit -a -m "Change quantity of item #5"
+-Истовремен add (додавање на сцена) и commit на текстуалната датотека со нова порака "Change quantity of item #5"
+
+12. Барање
+$ git checkout master
+-Преместување на гранката master
+
+13. Барање
+$ nano shopping_list.txt
+-Промена на содржината на текстуалната датотека
+$ git commit -a -m "Change quantity of item #2"
+-Истовремен add (додавање на сцена) и commit на текстуалната датотека со нова порака "Change quantity of item #2"
+
+14. Барање
+$ git push --all origin
+-Прави push на локалниот master кон поврзаниот remote репозиториум - ги поставува таму сите локални датотеки кои досега се направени на локалната гранка master
+
+15. Барање
+$ git checkout branch2
+-Преместување на гранката branch2
+
+16. Барање
+$ nano shopping_list.txt
+-Промена на содржината на текстуалната датотека
+$ git commit -a -m "Modify Item #4"
+-Истовремен add (додавање на сцена) и commit на текстуалната датотека со нова порака "Modify Item #4"
+
+17. Барање
+acer@Queen MINGW64 ~/Desktop/Lab/SI_2022_lab1_175040 (branch2)
+$ git log
+commit 96bc3a1e10e385cb17d0e343af2dc55b9f54c6a1 (HEAD -> branch2)
+Author: Tatijana Ilievska <tatijana.ilievska@students.finki.ukim.mk>
+Date:   Sun Apr 10 19:55:18 2022 +0200
+
+    Modify item #4
+
+commit 118f4b1e7ec2870605002d45e3f59b448c97ce13 (origin/branch2)
+Author: Tatijana Ilievska <tatijana.ilievska@students.finki.ukim.mk>
+Date:   Sun Apr 10 19:47:25 2022 +0200
+
+    Add quantites to the items
+
+commit bc74e0e22938aa7f47f01b38b96f6e8659e07634
+Author: Tatijana Ilievska <tatijana.ilievska@students.finki.ukim.mk>
+Date:   Sun Apr 10 19:46:31 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 4f02491636b927dd3997cc8b6790f24e36a76e93
+Author: Tatijana-Ilievska <102691140+Tatijana-Ilievska@users.noreply.github.com>
+Date:   Sun Apr 10 19:43:24 2022 +0200
+
+    Initial commit
+
+18. Барање
+$ git reset --soft HEAD^
+-Промена на последниот commit со што повторно се враќа назад во staged, фајлот е повторно modified 
+$ nano shopping_list.txt
+-Промена на содржината на текстуалната датотека со тоа што се додава нова шеста ставка
+$ git commit -a -m "Modify Item #4 and add item #6"
+-Истовремен add (додавање на сцена поради новата промена) и commit на текстуалната датотека со нова порака "Modify Item #4 and add item #6"
+
+19. Барање
+acer@Queen MINGW64 ~/Desktop/Lab/SI_2022_lab1_175040 (branch2)
+$ git log
+commit 70ea7f9020e125eb948e6e0287811a572f05f803 (HEAD -> branch2)
+Author: Tatijana Ilievska <tatijana.ilievska@students.finki.ukim.mk>
+Date:   Sun Apr 10 19:57:23 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit 118f4b1e7ec2870605002d45e3f59b448c97ce13 (origin/branch2)
+Author: Tatijana Ilievska <tatijana.ilievska@students.finki.ukim.mk>
+Date:   Sun Apr 10 19:47:25 2022 +0200
+
+    Add quantites to the items
+
+commit bc74e0e22938aa7f47f01b38b96f6e8659e07634
+Author: Tatijana Ilievska <tatijana.ilievska@students.finki.ukim.mk>
+Date:   Sun Apr 10 19:46:31 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 4f02491636b927dd3997cc8b6790f24e36a76e93
+Author: Tatijana-Ilievska <102691140+Tatijana-Ilievska@users.noreply.github.com>
+Date:   Sun Apr 10 19:43:24 2022 +0200
+
+    Initial commit
+
+20.Барање
+$ git checkout master
+-Префрлување кон гранката master
+$ git merge branch1
+Auto-merging shopping_list.txt
+Merge made by the 'ort' strategy.
+ shopping_list.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+21. Барање
+$ git merge branch2
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+-Се појави конфликт
+$ git diff
+diff --cc shopping_list.txt
+index bb348de,c76560a..0000000
+--- a/shopping_list.txt
++++ b/shopping_list.txt
+@@@ -1,5 -1,6 +1,11 @@@
+  -Milk x3
+ --Eggs x6
+ +-Eggs x60
+  -Bread x2
+++<<<<<<< HEAD
+ +-Cheese x1
+ +-Coffee x20
+++=======
++ -Bacon x1
++ -Coffee x2
++ -Juice
+++>>>>>>> branch2
+$ nano shopping_list.txt
+-Се реши со тоа што се зачуваа промените кои ги сакаме
+$ git add shopping_list.txt
+-Повторно поставување на сцена откако се зачувани вредностите
+$ git commit -m "Merge branch branch2"
+-Продолжување на процесот Merge
+
+22. Барање
+*зачувување на документацијата во фолдерот*
+$ git add .
+-Поставување на текстуалната датотека на stage
+$ git commit -m "Add docs"
+-Направен commit со порака Add docs
+
+23. Барање
+$ git push --all origin
