@@ -1,5 +1,5 @@
--Milk
--Eggs
--Bread
--Cheese
--Coffee
+-Milk x3
+-Eggs x6
+-Bread x2
+-Cheese x1
+-Coffee x2
