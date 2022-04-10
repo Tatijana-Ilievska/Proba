@@ -1,5 +1,6 @@
 -Milk x3
 -Eggs x6
 -Bread x2
--Cheese x1
+-Bacon x1
 -Coffee x2
+-Juice
