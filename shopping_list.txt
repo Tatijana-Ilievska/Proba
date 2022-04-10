@@ -2,4 +2,4 @@
 -Eggs x60
 -Bread x2
 -Cheese x1
--Coffee x2
+-Coffee x20
